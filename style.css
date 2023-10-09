@@ -1,9 +1,12 @@
 body {
-    background-color: #DDD0C8;
+    font-family: 'Oswald', sans-serif;
+    background-color: #0d1321;
     margin: 0;
 }
 
 #header {
+    background-color: #f8f9fa;
+    padding-bottom: 20px;
     max-width: 100%;
     height: 50px;
     display: flex;
@@ -12,28 +15,34 @@ body {
 }
 
 .navme {
-    padding-top: 10px;
-    padding-left: 10px;
+    padding-top: 20px;
+    margin-left: 4%;
     color: #323232;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: 1px;
     font-size: x-large;
 }
 
 .navigate {
-    flex: 1 1;
-    padding-left: 20px;
+    margin-right: 5%;
     color: #323232;
     text-decoration: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: 1px;
     font-size: large;
+}
+
+.navigate a {
+    transition: 300ms;
+}
+
+.navigate a:hover {
+    text-shadow: 5px 5px 5px black;
 }
 
 #header ul {
     list-style: none;
     margin: 0;
     padding-left: 50px;
+    font-weight: bold;
 }
 
 #header ul :first-child {
@@ -44,8 +53,88 @@ body {
     display: inline-block;
     margin-left: 1em;
     padding-left: 1em;
-    margin-top: 18px;
-    /* padding-top: 10px; */
+    margin-top: 25px;
     line-height: 1;
     border-left: 1px solid black;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 2%;
+}
+
+#about img{
+    margin: auto;
+    border-radius: 5%;
+    width: 20%;
+    transition: 1s;
+}
+
+#abouttext {
+    margin-left: 10%;
+    margin-right: 10%;
+    color: #edede9;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 2px black;
+}
+
+#projects {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 3%;
+    display: block;
+}
+
+#projects video, img {
+    border-radius: 5%;
+    width: 56%;
+    height: 400px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+#projectContainer {
+    display: flex;
+    padding-bottom: 50px;
+}
+
+#projectText {
+    margin-left: 50px;
+    color: #edede9;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 2px black;
+    margin-top: 50px;
+    letter-spacing: 3px;
+    width: 50%;
+}
+
+.slideContainer {
+    position: relative;
+    display: unset;
+    width: 56%;
+    height: 25em;
+}
+
+.slideContainer img {
+    position: absolute;
+    transition: opacity 1s ease-in-out;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.even {
+    text-align: right;
+    padding-right: 50px;
 }
