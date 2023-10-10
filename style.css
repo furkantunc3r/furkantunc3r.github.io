@@ -1,6 +1,6 @@
 body {
     font-family: 'Oswald', sans-serif;
-    background-color: #0d1321;
+    background-color: #161a1d;
     margin: 0;
 }
 
@@ -12,6 +12,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    z-index: 50;
 }
 
 .navme {
@@ -137,4 +139,182 @@ a {
 .even {
     text-align: right;
     padding-right: 50px;
+}
+
+#resumeContainer {
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-bottom: 50px;
+    font-size: x-large;
+}
+
+#resumeContainer h1 {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 5px;
+    color: #f8f9fa;
+}
+
+#intro {
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-bottom: 50px;
+    letter-spacing: 3px;
+    text-align: center;
+    color: #d0d3d3;
+}
+
+#education {
+    margin-left: 20px;
+    margin-right: 20px;
+    letter-spacing: 3px;
+    text-align: justify;
+    color: #d0d3d3;
+}
+
+#education h1 {
+    margin-bottom: 50px;
+}
+
+#education img {
+    height: 50px;
+    width: 50px;
+    border-bottom: 2px solid transparent;
+    transition: border 300ms ease-in-out;
+}
+
+#education img:hover {
+    border-bottom: 2px solid white;
+}
+
+#education h4, p{
+    margin: unset;
+    font-size: large;
+}
+
+#education p {
+    letter-spacing: 1px;
+}
+
+#school {
+    width: 30%;
+    margin-right: 200px;
+}
+
+#schoolContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#skills h1 {
+    padding-top: 30px;
+    text-align: center;
+}
+
+#categoryParent {
+    display: flex;
+    justify-content: space-around;
+}
+
+#categoryContainer ul {
+    padding: unset;
+}
+
+#categoryContainer li {
+    color: white;
+    padding-bottom: 10px;
+    list-style: none;
+}
+
+iframe {
+    filter: grayscale();
+}
+
+#contact {
+    position: relative;
+    margin-bottom: 100px;
+    height: 700px;
+    padding-top: 30px;
+    padding-left: 25%;
+    margin-bottom: 200px;
+    padding-right: 25%;
+    border-radius: 5%;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+#contact h2 {
+    text-align: center;
+    color: white;
+    font-size: xx-large;
+}
+
+#contact p {
+    color: white;
+    text-align: center;
+    font-size: x-large;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+}
+
+#contactImg {
+    background-image: url("./images/bckgrnd.jpg");
+    background-size: cover;
+    display: block;
+    filter: blur(20px) grayscale();
+    height: 100%;
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+#contactLinks {
+    display: flex;
+    justify-content: center;
+}
+
+#contact img {
+    width: 50px;
+    height: 50px;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+    filter: grayscale() contrast(2);
+}
+
+fieldset {
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+
+fieldset input {
+    width: 100%;
+    padding: 1.5vw 1vw;
+    font-size: x-large;
+    font-family: 'Oswald', sans-serif;
+}
+
+fieldset textarea {
+    resize: none;
+    padding: 1vw 1vw;
+    width: 100%;
+    height: 200px;
+    font-size: x-large;
+    font-family: 'Oswald', sans-serif;
+}
+
+fieldset button {
+    padding: 1vw 1vw;
+    width: 100%;
+    height: 100px;
+    font-size: x-large;
+    font-family: 'Oswald', sans-serif;
 }
