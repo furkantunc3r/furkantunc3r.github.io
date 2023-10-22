@@ -1,19 +1,26 @@
+@font-face {
+    font-family: mova;
+    src: url(./fonts/Mova.ttf);
+}
+
 body {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'mova';
     background-color: #161a1d;
     margin: 0;
+    overflow-x: hidden;
 }
 
 #header {
     background-color: #f8f9fa;
     padding-bottom: 20px;
-    max-width: 100%;
+    width: 100vw;
     height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
     z-index: 50;
+    position: fixed;
 }
 
 .navme {
@@ -65,39 +72,106 @@ a {
     color: unset;
 }
 
-#about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-top: 2%;
-}
+/* //////////////////////////////// */
 
-#about img{
-    margin: auto;
-    border-radius: 5%;
-    width: 20%;
-    transition: 1s;
-}
+.container {
+    position: relative;
+    text-align: justify;
+    color: white;
+  }
+  
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);
+    padding-left: 200px;
+    padding-right: 200px;
+    border-radius: 10px;
+  }
 
-#abouttext {
-    margin-left: 10%;
-    margin-right: 10%;
-    color: #edede9;
-    letter-spacing: 3px;
+.centered h1 {
+    font-size: 3vw;
     text-shadow: 2px 2px 2px black;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    margin-top: 80px;
 }
+
+.centered h2 {
+    font-size: xx-large;
+    text-shadow: 2px 2px 2px black;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 100px;
+}
+
+
+/* //////////////////////////////// */
+
+.overviewText {
+    margin-left: 20vw;
+    margin-right: 20vw;
+    text-align: justify;
+    margin-top: 5vw;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    letter-spacing: 2px;
+    font-size: xx-large;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+.visible-opacity {
+    opacity: 1;
+}
+
+/* /////////////////////////////// */
+
+
+.skillCardContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+    margin-bottom: 50px;
+}
+
+.skillCard {
+    width: 250px;
+    height: 250px;
+    margin-left: 70px;
+    background-color: rgba(255, 255, 255, 0.87);
+    border-radius: 10px;
+    text-align: center;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 2s, transform 2s;
+}
+
+.skillCard img {
+    padding-top: 25%;
+    width: 30%;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* ////////////////////////////// */
 
 #projects {
     margin-left: 15%;
     margin-right: 15%;
-    margin-top: 3%;
+    /* margin-top: 3%; */
+    padding-top: 10%;
     display: block;
 }
 
-#projects video, img {
+#projects video, #projects img {
     border-radius: 5%;
     width: 56%;
     height: 400px;
@@ -142,7 +216,7 @@ a {
 }
 
 #resumeContainer {
-    margin-top: 50px;
+    padding-top: 100px;
     margin-left: 200px;
     margin-right: 200px;
     padding-bottom: 50px;
@@ -239,7 +313,7 @@ iframe {
     position: relative;
     margin-bottom: 100px;
     height: 700px;
-    padding-top: 30px;
+    padding-top: 100px;
     padding-left: 25%;
     margin-bottom: 200px;
     padding-right: 25%;
