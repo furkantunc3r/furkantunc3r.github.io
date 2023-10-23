@@ -123,6 +123,7 @@ a {
 .experienceContainer h4 {
     display: inherit;
     color: #f8f9fa;
+    font-weight: lighter;
 }
 
 #certificate {
@@ -137,6 +138,7 @@ a {
 .certificateContainer h4  {
     display: inherit;
     color: #f8f9fa;
+    font-weight: lighter;
 }
 
 /* //////////////////////////////// */
@@ -256,7 +258,7 @@ a {
     padding-top: 100px;
     margin-left: 200px;
     margin-right: 200px;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
     font-size: x-large;
 }
 
@@ -428,4 +430,24 @@ fieldset button {
     height: 100px;
     font-size: x-large;
     font-family: 'Oswald', sans-serif;
+}
+
+/* //////////////////////////////////// */
+
+footer {
+    width: 100vw;
+    height: 6vh;
+    display: inline-flex;
+    text-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.Rights {
+    padding-top: 1px;
+    text-indent: 5%;
+    color: white;
+    letter-spacing: 4px;
 }
