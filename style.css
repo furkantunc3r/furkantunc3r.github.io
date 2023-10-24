@@ -534,6 +534,8 @@ footer {
     }
 }
 
+/* ////////////////////////// */
+
 @media all and (max-width: 700px) {
     
     #header {
@@ -624,6 +626,6 @@ footer {
         text-indent: unset;
         letter-spacing: 0;
         font-size: xx-small;
-        padding-top: 10px;
+        padding-top: 5px;
     }
 }
