@@ -438,10 +438,9 @@ fieldset button {
 footer {
     width: 100vw;
     height: 6vh;
-    display: inline-flex;
+    display: flex;
     text-wrap: nowrap;
     align-items: flex-start;
-    justify-content: space-around;
     max-width: 100%;
     margin-bottom: 10px;
 }
@@ -627,8 +626,7 @@ footer {
         letter-spacing: 0;
         font-size: xx-small;
         padding-top: 5px;
-        padding-right: 0;
-        margin-right: 0;
-        padding-left: 0px;
+        padding-left: 2px;
+        padding-right: 5px;
     }
 }
