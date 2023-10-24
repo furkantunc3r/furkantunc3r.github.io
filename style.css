@@ -478,8 +478,6 @@ footer {
         margin-left: 0px;
     }
 
-    /* ////////////////////// */
-
     #intro {
         margin: unset;
         padding-bottom: 30px;
@@ -529,10 +527,9 @@ footer {
         margin-top: 70px;
     }
 
-    /* ////////////////////// */
-
     .Rights {
         text-indent: unset;
+        padding-top: 1px;
         letter-spacing: 2px;
     }
 }
@@ -542,7 +539,7 @@ footer {
     #header {
         display: block;
         text-align: center;
-        height: 15vw;
+        height: 20vw;
     }
 
     .navme {
@@ -552,7 +549,8 @@ footer {
     }
 
     .navigate {
-        text-wrap: nowrap;
+        font-size: small;
+        text-wrap: wrap;
     }
 
     #header ul {
