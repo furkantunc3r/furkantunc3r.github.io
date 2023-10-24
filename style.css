@@ -614,6 +614,7 @@ footer {
     
     #schoolContainer {
         display: block;
+        text-wrap: nowrap;
     }
 
     #certificate {
@@ -626,6 +627,6 @@ footer {
         letter-spacing: 0;
         font-size: xx-small;
         padding-top: 5px;
-        padding-left: 5px;
+        padding-left: 10px;
     }
 }
