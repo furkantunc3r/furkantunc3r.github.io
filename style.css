@@ -623,10 +623,12 @@ footer {
     }
 
     .Rights {
-        text-indent: unset;
+        text-indent: 0px;
         letter-spacing: 0;
         font-size: xx-small;
         padding-top: 5px;
+        padding-right: 0;
+        margin-right: 0;
         padding-left: 0px;
     }
 }
