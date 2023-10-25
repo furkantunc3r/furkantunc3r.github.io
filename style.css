@@ -623,6 +623,11 @@ footer {
         text-align: left;
     }
 
+    #projectText ul {
+        padding-left: 0;
+        text-wrap: nowrap;
+    }
+
     .Rights {
         text-indent: 0px;
         letter-spacing: 0;
